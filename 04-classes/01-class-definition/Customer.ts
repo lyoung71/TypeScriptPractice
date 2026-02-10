@@ -3,13 +3,13 @@ class Customer {
     firstName: string;
     lastName: string;
 
-
+    constructor(theFirst: string, theLast: string) {
+        this.firstName = theFirst;
+        this.lastName = theLast;
+    }
 }
 
-let myCustomer: Customer = new Customer();
-myCustomer.firstName = "Landon";
-myCustomer.lastName = "Young";
+let myCustomer = new Customer("Landon", "Young");
 
 console.log(myCustomer.firstName);
 console.log(myCustomer.lastName);
-
